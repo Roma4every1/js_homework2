@@ -1,2 +1,3 @@
 let name = 'пОлИнА нАбЕрЕжНаЯ';
-alert(`Привет, ${name[0].toUpperCase()}${name.slice(1,6).toLowerCase()} ${name[7].toUpperCase()}${name.slice(8,17).toLowerCase()}!`);
+let space = name.indexOf(' ');
+alert(`Привет, ${name[0].toUpperCase()}${name.slice(1,space).toLowerCase()} ${name[space+1].toUpperCase()}${name.slice(space+2,name.length).toLowerCase()}!`);
